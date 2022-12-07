@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <head>
+    <title>Stock Market</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="site.css" />
+  </head>
+  <body>
+    <div>
+      <form action="/action_page.php">
+        <label for="tickerSymbol">Select symbol</label><br />
+        <select name="tickerSymbol" class="dropdown" onchange="onChangeSymbol(event)">
+          <option value="reliance">Reliance</option>
+          <option value="tcs">TCS</option></select
+        ><br />
+      </form>
+      <div class="container">
+        <svg id="svgContainer"></svg>
+        <div id="table-info"></div>
+      </div>
+    </div>
+    <script src="stock-tracker.js"></script>
+  </body>
+</html>

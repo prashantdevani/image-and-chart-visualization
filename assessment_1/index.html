@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Preview</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="site.css" />
+  </head>
+  <body>
+    <div>
+      <input
+        type="file"
+        accept="image/*"
+        onchange="onSelectImage(event)"
+      /><br />
+      <input
+        id="clear"
+        type="button"
+        value="clear"
+        onclick="clearHandler()"
+      /><br />
+      <div class="container">
+        <img id="imagePreview" onclick="onImageClick(event)" />
+        <div id="image-info">
+          <table>
+            <tr>
+              <th>Name</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Dimension</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>MEMI Type</th>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div id="table-content">
+          <table>
+            <tr>
+              <th>X pos</th>
+              <th>Y pos</th>
+              <th>Description</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <form
+            class="comment-form"
+            name="comment-form"
+            action="/"
+            method="get"
+            onsubmit="return onCommentSubmit()"
+          >
+            <div class="modal-body">
+              <div class="modal-input">
+                <label for="comment">Enter description</label>
+                <input
+                  class="input-field"
+                  name="comment"
+                  id="comment"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <div class="buttons-group">
+                <input
+                  type="button"
+                  class="modal-button"
+                  value="Cancel"
+                  onclick="onCancelHandler()"
+                />
+                <input type="submit" class="modal-button" value="Save" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="image-mapper.js"></script>
+  </body>
+</html>

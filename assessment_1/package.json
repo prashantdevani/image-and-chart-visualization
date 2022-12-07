@@ -1,0 +1,22 @@
+{
+  "name": "image-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.1.2",
+    "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently npm:devServer npm:tscWatch",
+    "devServer": "live-server --port=9090",
+    "tscWatch": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
