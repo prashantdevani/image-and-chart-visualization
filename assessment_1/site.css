@@ -46,7 +46,7 @@ footer {
 
 #imagePreview {
   max-width: 450px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .redDot {
