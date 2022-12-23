@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+  font-size: 10px;
+}
+body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  font-size: 1.6rem !important;
+}
+.header-menu,
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.header-menu {
+  justify-content: flex-end;
+  height: 60px;
+  background: #1c87c9;
+  color: #fff;
+}
+h2 {
+  margin: 0 0 8px;
+}
+ul li {
+  display: inline-block;
+  padding: 0 10px;
+  list-style: none;
+}
+aside {
+  flex: 0.4;
+  height: 165px;
+  padding-left: 15px;
+  border-left: 1px solid #666;
+}
+section {
+  flex: 1;
+  padding-right: 1.5rem;
+}
+footer {
+  padding: 0 1rem;
+  background: #ccc;
+}
+
+body {
+  font: 1rem "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: .2rem;
+}
+
+.dots {
+  stroke-width: .4rem;
+  fill: lightcoral
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: .1rem solid gray;
+  text-align: left;
+  padding: .1rem;
+}
+
+tr {
+  background-color: #dddddd;
+}
+
+.container{
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.dropdown{
+  width: 20rem;
+  display: flex;
+}
