@@ -21,7 +21,7 @@
           "type": "path"
         },
         {
-          "foreground": "#14A5AE",
+          "foreground": "#c7c402",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "fetch_stash_count": true,
